@@ -116,7 +116,7 @@ abstract class Mailable implements MailableInterface, CompressInterface, UnCompr
     /**
      * The name of the mailer that should send the message.
      */
-    public string $mailer;
+    public ?string $mailer = null;
 
     /**
      * The callbacks for the message.
